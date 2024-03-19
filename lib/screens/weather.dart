@@ -10,6 +10,7 @@ class Weather extends StatefulWidget {
   @override
   State<Weather> createState() => _WeatherState();
 }
+
 class _WeatherState extends State<Weather> {
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,7 @@ class _WeatherState extends State<Weather> {
             return SafeArea(
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(
-                    40, 1.2 * kToolbarHeight, 40, 1.2 * kToolbarHeight),
+                    20, 1.2 * kToolbarHeight, 30, 1.2 * kToolbarHeight),
                 child: SizedBox(
                   height: MediaQuery.of(context).size.height,
                   child: Stack(children: [
@@ -73,8 +74,8 @@ class _WeatherState extends State<Weather> {
                               Row(children: [
                                 const WeatherTempMaxImage(),
                                 const SizedBox(
-                                  width: 5,
-                                ),
+                                    // width: 5,
+                                    ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -90,7 +91,7 @@ class _WeatherState extends State<Weather> {
                                           '${state.results[0].tempmax.toString()} °C',
                                           style: const TextStyle(
                                             color: Colors.white,
-                                            fontSize: 18,
+                                            fontSize: 15,
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
@@ -119,7 +120,7 @@ class _WeatherState extends State<Weather> {
                                           '${state.results[0].tempmin.toString()} °C',
                                           style: const TextStyle(
                                             color: Colors.white,
-                                            fontSize: 18,
+                                            fontSize: 15,
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
@@ -144,10 +145,3 @@ class _WeatherState extends State<Weather> {
     );
   }
 }
-
-
-
-
-
-
-

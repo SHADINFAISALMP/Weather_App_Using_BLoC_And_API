@@ -20,6 +20,7 @@ class WeatherAlign extends StatelessWidget {
     );
   }
 }
+
 class WeatherAlign2 extends StatelessWidget {
   const WeatherAlign2({
     super.key,
@@ -40,6 +41,7 @@ class WeatherAlign2 extends StatelessWidget {
     );
   }
 }
+
 class WeatherAlign3 extends StatelessWidget {
   const WeatherAlign3({
     super.key,
@@ -130,13 +132,12 @@ class WeatherTempMinText extends StatelessWidget {
       "Temp min",
       style: TextStyle(
         color: Colors.white,
-        fontSize: 18,
+        fontSize: 15,
         fontWeight: FontWeight.bold,
       ),
     );
   }
 }
-
 
 class WeatherBackDropFilter extends StatelessWidget {
   const WeatherBackDropFilter({
@@ -148,11 +149,8 @@ class WeatherBackDropFilter extends StatelessWidget {
     return BackdropFilter(
       filter: ImageFilter.blur(sigmaX: 100.0, sigmaY: 100.0),
       child: Container(
-        decoration:
-            const BoxDecoration(color: Colors.transparent),
+        decoration: const BoxDecoration(color: Colors.transparent),
       ),
     );
   }
 }
-
-
