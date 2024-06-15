@@ -64,7 +64,7 @@ class _HomescreenState extends State<Homescreen> {
                       children: [
                         Image.asset("assets/images/1.png"),
                         const SizedBox(
-                          height: 29,
+                          height: 30,
                         ),
                         const Text(
                           "Discover The Weather \n          In Your City",
